@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>三栏布局</title>
+  </head>
+  <style media="screen">
+    html* {
+      padding: 0px;
+      margin:0px;
+    }
+  </style>
+  <body>
+    <!-- 给定高度，左右两栏宽度固定，中间自适应 -->
+    <section>
+      <style media="screen">
+        .table-box>div{
+          min-height:100px;
+          display: table-cell;
+        }
+        .table-box .left {
+          width:300px;
+          background: red;
+        }
+        .table-box .right{
+          width:300px;
+          background: blue;
+        }
+        .table-box .center {
+          background: yellow;
+        }
+      </style>
+      <article class="table-box">
+        <div class="left">
+        </div>
+        <div class="center">
+          <h1>table中间布局</h1>
+          这是中间内容这是中间内容这是中间内容这是中间内容
+          <section>
+            <h2>這是中間元素的孩子</h2>
+          </section>
+        </div>
+        <div class="right">
+        </div>
+      </article>
+    </section>
+  </body>
+</html>

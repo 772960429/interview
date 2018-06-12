@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>三栏布局</title>
+  </head>
+  <style media="screen">
+    html* {
+      padding: 0px;
+      margin:0px;
+    }
+  </style>
+  <body>
+    <!-- 给定高度，左右两栏宽度固定，中间自适应 -->
+    <!-- 为什么float和页面有间距 -->
+    <section>
+      <style media="screen">
+        .float-box div{
+          min-height:100px
+        }
+        .float-box{
+          margin: 10px auto;
+          }
+        .float-box .left {
+          float:left;
+          width:300px;
+          background: red;
+        }
+        .float-box .right{
+          float: right;
+          width:300px;
+          background: blue;
+        }
+        .float-box .center {
+          background: yellow;
+        }
+      </style>
+      <article class="float-box">
+        <div class="left">
+        </div>
+        <div class="right">
+        </div>
+        <div class="center">
+          <h1>float中间布局</h1>
+          这是中间内容这是中间内容这是中间内容这是中间内容
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
